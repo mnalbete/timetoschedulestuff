@@ -21,8 +21,18 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+
 .description{
   white-space: pre-wrap;
+}
+/* time on table  */
+.table th {
+  vertical-align: middle;
+  font-size: x-large;
+}
+/* save button control */
+.table td {
+  vertical-align: middle;
 }
 
 .time-block{

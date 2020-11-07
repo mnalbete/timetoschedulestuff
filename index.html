@@ -20,378 +20,122 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p class="timeDisplay"></p>
   </header>
-
   <div class="container">
+
     <!-- Timeblocks go here -->
 
-    <table class="table text-center">
+    <table class="table btn-track">
       <tbody>
-        <!-- form to use -->
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">1 AM</th>
-            <td>
-              <!-- once you type in text area save text to local storage -->
-              <textarea class="form-control" id="textArea" rows="3"></textarea>
-            </td>
-<!-- link button to form to it saves -->
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
+        <th id="hour">0900</th>
+        <td>
+          <textarea id="myTextarea9" class="form-control" data-hour="9" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave9()">Save</button>
+          
+        </td>
+      </tbody>
 
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">2 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
+      <tbody>
+        <th id="hour">1000</th>
+        <td>
+          <textarea id="myTextarea10" class="form-control" data-hour="10" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave10()">Save</button>
+          
+        </td>
+      </tbody>
 
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
+      <tbody>
+        <th id="hour">1100</th>
+        <td>
+          <textarea id="myTextarea11" class="form-control" data-hour="11" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave11()">Save</button>
+          
+        </td>
+      </tbody>
 
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">3 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
+      <tbody>
+        <th id="hour">1200</th>
+        <td>
+          <textarea id="myTextarea12" class="form-control" data-hour="12" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave12()">Save</button>
+         
+        </td>
+      </tbody>
 
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">4 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
+      <tbody>
+        <th id="hour">1300</th>
+        <td>
+          <textarea id="myTextarea13" class="form-control" data-hour="13" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave13()">Save</button>
+         
+        </td>
+      </tbody>
 
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
+      <tbody>
+        <th id="hour">1400</th>
+        <td>
+          <textarea id="myTextarea14" class="form-control" data-hour="14" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave14()">Save</button>
+         
+        </td>
+      </tbody>
+      <tbody>
+        <th id="hour">1500</th>
+        <td>
+          <textarea id="myTextarea15" class="form-control" data-hour="15" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave15()">Save</button>
+          
+        </td>
+      </tbody>
 
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">5 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">6 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">7 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">8 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">9 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">10 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">11 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">12 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">1 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">2 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">3 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">4 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">5 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">6 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">7 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">8 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">9 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">10 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">11 PM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
-
-        <form>
-          <tr class="timeOfDay">
-            <th scope="row" class="hour">12 AM</th>
-            <td>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </td>
-
-            <td>
-              <button type="button" class="btn btn-primary btn-lg btn-block text-center">
-                save
-              </button>
-            </td>
-          </tr>
-        </form>
+      <tbody>
+        <th id="hour">1600</th>
+        <td>
+          <textarea id="myTextarea16" class="form-control" data-hour="16" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave16()">Save</button>
+         
+        </td>
+      </tbody>
+      <tbody>
+        <th id="hour">1700</th>
+        <td>
+          <textarea id="myTextarea17" class="form-control" data-hour="17" placeholder="Add Events" rows="3"></textarea>
+          <p></p>
+        </td>
+        <td>
+          <button class="btn btn-primary btn-sm btn-block" onclick="mySave17()">Save</button>
+       
+        </td>
       </tbody>
     </table>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/java.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/java.js"></script>
 </body>
 
 </html>
